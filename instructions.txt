@@ -1,0 +1,10 @@
+Instructions to use the PDFlocker code:
+
+1) Clone the repository to your local machine
+
+2) Start using it!!
+
+3) In case of any feedback or complaints, feel free to contact me at
+   email: thomasamal479@gmail.com
+  
+4) It's my first repository. Do support :)
