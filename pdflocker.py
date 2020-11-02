@@ -4,7 +4,7 @@ from tkinter import ttk
 from tkinter import messagebox as msg
 from tkinter import filedialog
 import time
-def browseFiles():
+def browseFiles():                                              # for the file explorer
     global filename
     filename = filedialog.askopenfilename(initialdir = "/", 
 										title = "Select a File", 
@@ -13,7 +13,7 @@ def browseFiles():
 													("all files", 
 														"*.*")))
     ttk.Label(win,text = "You have chosen: "+filename).grid(column = 4,row = 5)
-def secure_pdf(file,password):
+def secure_pdf(file,password):                                 # locking the file
     parser = PdfFileWriter()
     pdf = PdfFileReader(file)
 
@@ -26,7 +26,7 @@ def secure_pdf(file,password):
         f.close()
     print("encrypted file created....")
 
-def confirm():
+def confirm():                                   # confirmation message
     secure_pdf(filename,passwd.get())
     msg.showinfo("PDF locker says","Password protected file successfully created in the same folder as the original file.")
     time.sleep(5)
@@ -34,7 +34,7 @@ def confirm():
 
 if __name__ == "__main__":
     win  = tk.Tk()
-    win.geometry("300x400")
+    win.geometry("800x200")
     win.title("PDF Locker")
     ttk.Label(win,text = "Choose file location:").grid(column = 0,row = 0)
     ttk.Button(win,text="Choose",command = browseFiles).grid(column = 1,row = 0)
