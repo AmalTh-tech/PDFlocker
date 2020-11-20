@@ -4,7 +4,6 @@ Instructions to use the PDFlocker code:
 
 2) Start using it!!
 
-3) In case of any feedback or complaints, feel free to contact me at
-   email: thomasamal479@gmail.com
+3) In case of any feedback or complaints, feel free to report.
   
 4) It's my first repository. Do support :)
